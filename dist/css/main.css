@@ -409,7 +409,7 @@ img {
 }
 
   #contact-a {
-      height: 600px;
+      height: 680px;
   }
 
 #contact-a .text-fields {
@@ -433,6 +433,7 @@ img {
     padding: 0.5rem 1rem; }
 
 #contact-a button[type='submit'] {
+  margin-top: 50px;
   width: 50%; }
 
 #contact-b .contact-info {
