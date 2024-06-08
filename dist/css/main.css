@@ -328,7 +328,7 @@ img {
 }
 
 #about-a .bio h4{
-  padding-top: 10px;
+  padding-top: 5px;
   padding-bottom: 10px;
 }
 
@@ -364,19 +364,6 @@ img {
 #about-b .specials .fas {
   color: #ffbc00;
   padding-bottom: 0.4rem; }
-    
-
-#about-b .progress {
-  overflow: hidden;
-  height: 20px;
-  background: #ccc;
-  border-radius: 5px;
-  margin-bottom: 0.6rem; }
-  #about-b .progress div {
-    height: 100%;
-    color: #fff;
-    text-align: center;
-    background: #ffbc00; }
 
 #about-c .about-logos {
   display: grid;
@@ -475,7 +462,9 @@ img {
   #header-home {
     height: 30rem; }
     #header-home .header-content {
-      padding-top: 5rem; } }
+      padding-top: 5rem; } 
+      #about-a .about-info {
+        grid-template-areas: 'bioimage' 'bio' 'aw1' 'aw2' 'aw3'; } }
 
 @media (max-width: 500px) {
   #main-nav {
@@ -506,14 +495,23 @@ img {
       padding-bottom: 0; }
   #home-b .stats div {
     padding: 2rem 0 1rem 0; }
-  #about-a .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'aw1' 'aw2' 'aw3'; }
+  #about-b .specials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   #about-c {
     display: none; }
+  #contact-a {
+    height: 735px;
+  }
   #contact-a .text-fields {
     grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; 
     margin-bottom: 0;
     height: 425px;
+  }
+  #contact-a #submit-btn {
+    margin-top: 125px;
   }
   #contact-b div {
     margin-bottom: 1rem;
